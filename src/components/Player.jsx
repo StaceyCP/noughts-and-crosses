@@ -1,4 +1,4 @@
-function Player({ player, isPlayer1 }) {
+function Player({ player, isPlayer1, winner }) {
     if (isPlayer1 && player === 1) {
         return (
             <div className="player-container">
