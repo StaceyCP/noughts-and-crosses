@@ -24,7 +24,7 @@ function GameGrid({ isPlayer1, setIsPlayer1, winner, setWinner, setIsGameOver })
             } else if (winningCombination.every((gridItem) => player2Choices.includes(gridItem))) {
                 setIsGameOver(true)
                 setWinner("Player 2 wins!")
-            } else if (winner === "" && turnCount === 9) {
+            } else if (winner === "Play!" && turnCount === 9) {
                 setIsGameOver(true)
                 setWinner("It's a draw")
             }
@@ -33,7 +33,7 @@ function GameGrid({ isPlayer1, setIsPlayer1, winner, setWinner, setIsGameOver })
     }
     checkWinner()
     const handleClick = (e) => {
-        if (winner === "") {
+        if (winner === "Play!") {
             if (isPlayer1 && e.target.children[0].alt === "") {
                 e.target.children[0].src = require("../imgs/circle.png")
                 e.target.children[0].alt = "nought"

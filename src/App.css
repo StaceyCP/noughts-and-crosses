@@ -22,13 +22,14 @@ body {
   color: white;
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   font-size: 50px;
+  margin-top: 15px;
   text-align: center;
 }
 
 .winner-announcement {
   color: white;
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   margin: 0px;
   margin-top: -20px;
 }
@@ -55,8 +56,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: 30px auto;
-  height: 495px;
-  width: 495px;
+  height: 435px;
+  width: 435px;
 }
 
 .grid-item {
@@ -64,9 +65,13 @@ body {
   background-color: #22333b;
   display: flex;
   justify-content: center;
-  height: 155px;
+  height: 135px;
   margin: 0px;
-  width: 155px;
+  width: 135px;
+}
+
+.grid-item img {
+  width: 110px;
 }
 
 .top-left {
@@ -133,5 +138,16 @@ body {
 }
 
 .active {
-  transform: scale(1.3);
+  transform: scale(1.2);
+}
+
+button {
+  all: unset;
+  background-color: #39a0ac;
+  border: 8px solid #205c62;
+  border-radius: 25px;
+  color: white;
+  height: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
 }

@@ -4,14 +4,14 @@ import Header from './components/Header';
 import { useState } from 'react';
 
 function App() {
-  const [winner, setWinner] = useState("")
+  const [winner, setWinner] = useState("Play!")
   const [isGameOver, setIsGameOver] = useState(false);
   const [reset, setReset] = useState(false)
 
   const handleReset = () => {
     setReset(!reset)
     setIsGameOver(false)
-    setWinner("")
+    setWinner("Play!")
   }
 
   return (
