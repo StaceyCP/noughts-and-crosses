@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+# Noughts and Crosses Mini app
+
+This is a personal project.
+I utilised react and state management to create this mini game of noughts and crosses.
+
+In this project I was also able to practice creating media queries to accomodate for differing screen sizes
+
+### Attributions:
+	favicon: "https://www.flaticon.com/free-icons/tic-tac-toe" - Tic-tac-toe icons created by Pixel perfect 
+
+	circle icon: "https://www.flaticon.com/free-icons/circle" Circle icons created by Alfredo Hernandez 
+
+	x icon: "https://www.flaticon.com/free-icons/close" Close icons created by Pixel perfect
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

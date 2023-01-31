@@ -1,14 +1,3 @@
-body {
-  box-sizing: border-box;
-  background-color: #22333b;
-  margin: 0;
-  padding: 0;
-}
-
-.App {
-  text-align: center;
-}
-
 @font-face {
   font-family: 'Bebas Neue';
   font-style: normal;
@@ -16,6 +5,18 @@ body {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #22333b;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.App {
+  text-align: center;
 }
 
 .game-title {
@@ -34,6 +35,13 @@ body {
   margin-top: -20px;
 }
 
+h3 {
+  color: white;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
 .game-container {
   align-items: center;
   display: flex;
@@ -41,7 +49,12 @@ body {
 }
 
 .player-container {
+  margin-bottom: 120px;
   width: 30%;
+}
+
+.player-container img{
+  width: 120px;
 }
 
 .player-heading {
@@ -62,7 +75,6 @@ body {
 
 .grid-item {
   align-items: center;
-  background-color: #22333b;
   display: flex;
   justify-content: center;
   height: 135px;
@@ -151,3 +163,296 @@ button {
   margin-bottom: 20px;
   padding: 10px;
 }
+
+@media screen and (max-width: 1100px) {
+  .game-title {
+    color: white;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .winner-announcement {
+    font-size: 35px;
+    margin-top: -20px;
+  }
+  
+  h3 {
+    font-size: 25px;
+  }
+  
+  .player-container {
+    margin-bottom: 120px;
+    width: 17%;
+  }
+  .player-container img{
+    width: 90px;
+  }
+  
+  
+  .player-heading {
+    color: white;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 27px;
+  }
+  
+  .grid-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    height: 375px;
+    width: 375px;
+  }
+  
+  .grid-item {
+    height: 115px;
+    margin: 0px;
+    width: 115px;
+  }
+  
+  .grid-item img {
+    width: 80px;
+  }
+  
+  .active {
+    transform: scale(1.1);
+  }
+  
+  button {
+    all: unset;
+    background-color: #39a0ac;
+    border: 5px solid #205c62;
+    border-radius: 25px;
+    color: white;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .game-title {
+      color: white;
+      font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+      font-size: 42px;
+      margin-top: 15px;
+      text-align: center;
+    }
+    
+    .winner-announcement {
+      font-size: 35px;
+      margin-top: -20px;
+    }
+    
+    h3 {
+      font-size: 22px;
+    }
+    
+    .player-container {
+      margin-bottom: 120px;
+      width: 20%;
+    }
+    .player-container img{
+      width: 100px;
+    }
+    
+    
+    .player-heading {
+      color: white;
+      font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+      font-size: 24px;
+    }
+    
+    .grid-container {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px auto;
+      height: 330px;
+      width: 330px;
+    }
+    
+    .grid-item {
+      height: 100px;
+      margin: 0px;
+      width: 100px;
+    }
+    
+    .grid-item img {
+      width: 90px;
+    }
+    
+    .active {
+      transform: scale(1.1);
+    }
+    
+    button {
+      all: unset;
+      background-color: #39a0ac;
+      border: 5px solid #205c62;
+      border-radius: 25px;
+      color: white;
+      height: 20px;
+      margin-bottom: 20px;
+      padding: 7px;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+  .game-title {
+    color: white;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .winner-announcement {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  .player-container {
+    margin-bottom: 120px;
+  }
+  .player-container img{
+    width: 60px;
+  }
+  
+  
+  .player-heading {
+    color: white;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  }
+  
+  .grid-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px auto;
+    height: 300px;
+    width: 300px;
+  }
+  
+  .grid-item {
+    height: 90px;
+    margin: 0px;
+    width: 90px;
+  }
+  
+  .grid-item img {
+    width: 60px;
+  }
+  
+  .active {
+    transform: scale(1.05);
+  }
+  
+  button {
+    all: unset;
+    background-color: #39a0ac;
+    border: 5px solid #205c62;
+    border-radius: 25px;
+    color: white;
+    height: 18px;
+    margin-top: 20px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+.game-title {
+    color: white;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .winner-announcement {
+    font-size: 28px;
+    margin-top: -20px;
+  }
+  
+ .player-container {
+    display: none;
+  }
+  
+  .grid-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    height: 330px;
+    width: 330px;
+  }
+  
+  .grid-item {
+    height: 100px;
+    margin: 0px;
+    width: 100px;
+  }
+  
+  .grid-item img {
+    width: 90px;
+  }
+  
+  .active {
+    transform: scale(1.1);
+  }
+  
+  button {
+    all: unset;
+    background-color: #39a0ac;
+    border: 5px solid #205c62;
+    border-radius: 25px;
+    color: white;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .game-title {
+      color: white;
+      font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      margin-top: 15px;
+      text-align: center;
+    }
+    
+    .winner-announcement {
+      font-size: 25px;
+      margin-top: -20px;
+    }
+    
+   .player-container {
+      display: none;
+    }
+    
+    .grid-container {
+      height: 255px;
+      width: 255px;
+    }
+    
+    .grid-item {
+      height: 75px;
+      width: 75px;
+    }
+    
+    .grid-item img {
+      width: 60px;
+    }
+  }
