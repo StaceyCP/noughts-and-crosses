@@ -12,9 +12,9 @@ function App() {
 
   useEffect(() => {
       if(winner === "Player 1 wins!") {
-          setP1WinCount(p1WinCount + 1)
+          setP1WinCount(prev => prev + 1)
       } else if (winner === "Player 2 wins!") {
-          setP2WinCount(p2WinCount + 1)
+          setP2WinCount(prev => prev + 1)
       }
   }, [winner])
 
